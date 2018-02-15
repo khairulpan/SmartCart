@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/editTextAmount"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="3"
+        android:textAlignment="center"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/editTextAmount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        app:srcCompat="@drawable/badge" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView5"
+        android:text="You will be charge MYR 3.00 for every one time smart cart usage.Click the button below for payment,  start the connection and use the SmartCart"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/paypallogo" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_below="@+id/buttonPay"
+        android:layout_marginTop="14dp"
+        android:text="Pay with paypal"
+        android:textStyle="bold|italic" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/buttonPay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="47dp"
+        android:layout_marginStart="28dp"
+        android:layout_toEndOf="@+id/imageButtonhelpoff"
+        android:clickable="true"
+        app:backgroundTint="@android:color/white"
+        app:fabSize="normal"
+        app:rippleColor="@android:color/holo_blue_light"
+        app:srcCompat="@drawable/btnpaypal" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/imageButtonLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageButtonprooff"
+        android:layout_marginStart="17dp"
+        android:layout_toEndOf="@+id/imageButtonprooff"
+        android:clickable="true"
+        app:backgroundTint="@android:color/holo_red_light"
+        app:fabSize="normal"
+        app:rippleColor="@android:color/holo_red_light"
+        app:srcCompat="@drawable/signout" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/imageButtonprooff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView5"
+        android:layout_alignTop="@+id/buttonPay"
+        android:layout_marginEnd="29dp"
+        android:clickable="true"
+        app:backgroundTint="@android:color/white"
+        app:fabSize="normal"
+        app:rippleColor="@android:color/holo_orange_dark"
+        app:srcCompat="@drawable/promoon" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/imageButtonhelpoff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonPay"
+        android:layout_toStartOf="@+id/imageView5"
+        android:clickable="true"
+        app:backgroundTint="@android:color/white"
+        app:fabSize="normal"
+        app:rippleColor="@android:color/holo_green_light"
+        app:srcCompat="@drawable/infoon" />
+
+</RelativeLayout>
